@@ -8,6 +8,7 @@ function submitIssue(e) {
   const id = Math.floor(Math.random() * 100000000);
   const status = 'Open';
 
+
   const issue = { id, description, severity, assignedTo, status };
   let issues = [];
   if (localStorage.getItem('issues')) {
